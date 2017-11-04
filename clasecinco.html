@@ -2,31 +2,33 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Datos básicos</title>
+	<header><h1>COLOCA TUS DATOS</h1></header>
+	<link rel="stylesheet" href="css/quintaclase.css"/>
 </head>
 <body>
 	<form action="/registro" method="post">
 		<div class="field">
-			<label for="Nombre">Nombre</label>
-			<input type="text" name="Nombre" id="Nombre" placeholder="Tú nombre" autofocus>
+			<label for="Nombre">NOMBRE(S)</label><br>
+			<input type="text" name="Nombre" id="Nombre" placeholder="Tú nombre" autofocus required>
 		</div>
 		<div class="field">
-			<label for="Apellido">Apellido</label>
-			<input type="text" name="Apellido" id="Apellido" placeholder="Pon tus apellidos completos">
+			<label for="Apellido">APELLIDOS</label><br>
+			<input type="text" name="Apellido" id="Apellido" placeholder="Pon tus apellidos completos" required>
 		</div>
 		<div class="field">
-			<label for="email">E-mail</label>
-			<input type="text" name="email" id="email" placeholder="E-mail">
+			<label for="email">E-MAIL</label><br>
+			<input type="text" name="email" id="email" placeholder="E-mail" required>
 		</div>
 		<div class="field">
-			<label>Sexo</label><br>
-			<input type="radio" name="sexo" id="Hombre">
+			<label>SEXO</label><br>
+			<input type="radio" name="sexo" id="Hombre" required>
 			<label for="hombre">Hombre</label><br>
-			<input type="radio" name="sexo" id="Mujer">
+			<input type="radio" name="sexo" id="Mujer" required>
 			<label for="mujer">Mujer</label>
 		</div>
 		<div class="field">
-			<label>Selecciona tu estado</label><br>
+			<label>SELECCIONA TU ESTADO</label><br>
 			<select name="estado" id="estado">
 				<option value="" disaled selected> Selecciona tu estado</option>
 				<option value ="1">Aguascalientes</option>
@@ -64,11 +66,17 @@
 			</select>
 		</div>
 		<div class="field">
-			<label for="password">Password</label><br>
-			<input type="password" name="password" id="password" placeholder="Ingresa tu password">
+			<label for="password">PASSWORD</label><br>
+			<input type="password" name="password" id="password" placeholder="Ingresa tu password" required>
 		</div>
-
-
-
+		<div class="field">
+			<label for="mensaje">¿POR QUÉ QUIERES REGISTRARTE?</label><br>
+			<textarea name="mensaje" id="mensaje" col="100" row="2" placeholder="Déjanos tu respuesta"></textarea>
+		</div>
+		<div class="field">
+			<input type="checkbox" name="Terminos" id="Terminos" required>
+			<label for="terminos">Acepto los <a href="/terminos" target="_blank" title="términos y condiciones">términos y condiciones</a>
+		</div>
+		<input type="submit" value="Enviar" required>
 </body>
 </html>
