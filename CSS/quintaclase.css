@@ -1,0 +1,49 @@
+form{
+	width:60%; 
+	max-width: 600px;/*Declara un límite máximo de ancho*/
+	min-width: 300px;/*Declara un límite mínimo de ancho*/
+	margin: 0 auto;
+}
+body {
+	background-color: #7FADA9;
+}
+a:hover {
+	color: #7B2A3B;
+}
+a:active{
+	color: #F8C58C;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	background-color: #7B2A3B;
+}
+#name-container > label {
+	background-color: green;
+}
+#name-container > label:first-child{
+	background-color: purple;
+} > label{
+	background-color: white;
+}
+#name-container > label > label{
+	background-color: white;
+}
+input[type="checkbox"]:checked + label {
+	color: green;
+}
+label {
+	color: black;
+}
+input:focus{
+	background-color: black;
+}
+input:valid{
+	background-color: green;
+}
+input:invalid{
+	background-color: red;
+}
+input[type="submit"]{
+	background-color: white;
+}

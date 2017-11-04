@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Datos básicos</title>
-	<header><h1>COLOCA TUS DATOS</h1></header>
 	<link rel="stylesheet" href="css/quintaclase.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 </head>
 <body>
 	<form action="/registro" method="post">
-		<div class="field">
-			<label for="Nombre">NOMBRE(S)</label><br>
+		<h2>COLOCA TUS DATOS</h2>
+		<div class="field" id="name-container">
+			<label for="Nombre" >NOMBRE(S)</label><br>
 			<input type="text" name="Nombre" id="Nombre" placeholder="Tú nombre" autofocus required>
+			<label for="Prueba">Prueba <label for="esto es">Esto no es un hijo directo</label></label>
 		</div>
 		<div class="field">
 			<label for="Apellido">APELLIDOS</label><br>
@@ -18,7 +20,7 @@
 		</div>
 		<div class="field">
 			<label for="email">E-MAIL</label><br>
-			<input type="text" name="email" id="email" placeholder="E-mail" required>
+			<input type="email" name="email" id="email" placeholder="E-mail" required>
 		</div>
 		<div class="field">
 			<label>SEXO</label><br>
@@ -71,7 +73,7 @@
 		</div>
 		<div class="field">
 			<label for="mensaje">¿POR QUÉ QUIERES REGISTRARTE?</label><br>
-			<textarea name="mensaje" id="mensaje" col="100" row="2" placeholder="Déjanos tu respuesta"></textarea>
+			<textarea name="mensaje" id="mensaje" col="100" rows="2" placeholder="Déjanos tu respuesta"></textarea>
 		</div>
 		<div class="field">
 			<input type="checkbox" name="Terminos" id="Terminos" required>
